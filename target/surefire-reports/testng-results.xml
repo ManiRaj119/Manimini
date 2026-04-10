@@ -2,38 +2,56 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-10T17:47:37 IST" name="Surefire suite" finished-at="2026-04-10T17:48:11 IST" duration-ms="33768">
+  <suite started-at="2026-04-10T17:53:03 IST" name="Surefire suite" finished-at="2026-04-10T17:53:24 IST" duration-ms="21289">
     <groups>
     </groups>
-    <test started-at="2026-04-10T17:47:37 IST" name="Surefire test" finished-at="2026-04-10T17:48:11 IST" duration-ms="33768">
+    <test started-at="2026-04-10T17:53:03 IST" name="Surefire test" finished-at="2026-04-10T17:53:24 IST" duration-ms="21289">
       <class name="tests.OrangeHRMCaseStudyTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.OrangeHRMCaseStudyTest@4313f5bc]" started-at="2026-04-10T17:47:37 IST" name="setUp" finished-at="2026-04-10T17:47:40 IST" duration-ms="3429" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.OrangeHRMCaseStudyTest@4313f5bc]" started-at="2026-04-10T17:53:03 IST" name="setUp" finished-at="2026-04-10T17:53:06 IST" duration-ms="3018" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="caseStudy_deleteSkillsSet_simple()[pri:0, instance:tests.OrangeHRMCaseStudyTest@4313f5bc]" started-at="2026-04-10T17:47:40 IST" name="caseStudy_deleteSkillsSet_simple" finished-at="2026-04-10T17:48:08 IST" duration-ms="28034" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="caseStudy_deleteSkillsSet_simple()[pri:0, instance:tests.OrangeHRMCaseStudyTest@4313f5bc]" started-at="2026-04-10T17:53:06 IST" name="caseStudy_deleteSkillsSet_simple" finished-at="2026-04-10T17:53:22 IST" duration-ms="15952" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element found by By.xpath: //div[contains(@class,'oxd-table-body')]//div[contains(@class,'oxd-table-row')][.//div[normalize-space()='Automation Engineer']], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'oxd-table-body')]//div[contains(@class,'oxd-table-row')][.//div[normalize-space()='Automation Engineer']]"}.
-(tried for 12 seconds with 500 milliseconds interval)
+              <![CDATA[target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: MicrosoftEdge=146.0.3856.109) (error code: "target frame detached")
 Build info: version: '4.41.0', revision: '9fc754f'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.109, fedcm:accounts: true, goog:processID: 31364, ms:edgeOptions: {debuggerAddress: localhost:58160}, msedge: {msedgedriverVersion: 146.0.3856.109 (4ea56166594..., userDataDir: C:\Users\2474080\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58160/devtoo..., se:cdpVersion: 146.0.3856.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ad5504d9419e0936836fa404addd5873]]>
+Command: [8ffaf68dc855188275a658528684330b, findElement {using=xpath, value=//button[.//i[contains(@class,'plus')]] | //button[normalize-space()='Add']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.109, fedcm:accounts: true, goog:processID: 2600, ms:edgeOptions: {debuggerAddress: localhost:61281}, msedge: {msedgedriverVersion: 146.0.3856.109 (4ea56166594..., userDataDir: C:\Users\2474080\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61281/devtoo..., se:cdpVersion: 146.0.3856.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ffaf68dc855188275a658528684330b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //div[contains(@class,'oxd-table-body')]//div[contains(@class,'oxd-table-row')][.//div[normalize-space()='Automation Engineer']], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'oxd-table-body')]//div[contains(@class,'oxd-table-row')][.//div[normalize-space()='Automation Engineer']]"}.
-(tried for 12 seconds with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.WebDriverException: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: MicrosoftEdge=146.0.3856.109) (error code: "target frame detached")
 Build info: version: '4.41.0', revision: '9fc754f'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.109, fedcm:accounts: true, goog:processID: 31364, ms:edgeOptions: {debuggerAddress: localhost:58160}, msedge: {msedgedriverVersion: 146.0.3856.109 (4ea56166594..., userDataDir: C:\Users\2474080\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58160/devtoo..., se:cdpVersion: 146.0.3856.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ad5504d9419e0936836fa404addd5873
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
-at pages.PageBase.waitForRowToBePresent(PageBase.java:76)
-at tests.OrangeHRMCaseStudyTest.caseStudy_deleteSkillsSet_simple(OrangeHRMCaseStudyTest.java:43)
+Command: [8ffaf68dc855188275a658528684330b, findElement {using=xpath, value=//button[.//i[contains(@class,'plus')]] | //button[normalize-space()='Add']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 146.0.3856.109, fedcm:accounts: true, goog:processID: 2600, ms:edgeOptions: {debuggerAddress: localhost:61281}, msedge: {msedgedriverVersion: 146.0.3856.109 (4ea56166594..., userDataDir: C:\Users\2474080\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61281/devtoo..., se:cdpVersion: 146.0.3856.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ffaf68dc855188275a658528684330b
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:172)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:756)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:749)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+at pages.PageBase.clickable(PageBase.java:24)
+at pages.PageBase.clickAdd(PageBase.java:96)
+at pages.JobCategoriesPage.addCategory(JobCategoriesPage.java:18)
+at tests.OrangeHRMCaseStudyTest.caseStudy_deleteSkillsSet_simple(OrangeHRMCaseStudyTest.java:42)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -67,11 +85,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- caseStudy_deleteSkillsSet_simple -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.OrangeHRMCaseStudyTest@4313f5bc]" started-at="2026-04-10T17:48:08 IST" name="tearDown" finished-at="2026-04-10T17:48:11 IST" duration-ms="2249" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.OrangeHRMCaseStudyTest@4313f5bc]" started-at="2026-04-10T17:53:22 IST" name="tearDown" finished-at="2026-04-10T17:53:24 IST" duration-ms="2264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
